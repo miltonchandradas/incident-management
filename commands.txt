@@ -7,3 +7,7 @@ RUN LOCALLY - cds watch:
 rm incident-management.sqlite
 cds deploy --to sqlite:incident-management.sqlite
 cds watch
+
+SAMPLE DATA
+----------------------------------------------------------------------------------------
+cds add data
