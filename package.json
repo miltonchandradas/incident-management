@@ -7,7 +7,9 @@
   "private": true,
   "dependencies": {
     "@sap/cds": "^8",
-    "express": "^4"
+    "express": "^4",
+    "@cap-js/hana": "^1",
+    "@sap/xssec": "^4"
   },
   "devDependencies": {
     "@cap-js/cds-types": "^0.9.0",
@@ -51,7 +53,17 @@
             }
           }
         }
-      }
+      },
+      "[production]": {
+        "db": {
+          "kind": "hana"
+        },
+        "auth": "xsuaa"
+      },
+      "html5-runtime": true
+    },
+    "sql": {
+      "native_hana_associations": false
     }
   },
   "sapux": [

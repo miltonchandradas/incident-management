@@ -1,6 +1,7 @@
 SETTING UP
 ----------------------------------------------------------------------------------------
 cds init incident-management
+npm install
 
 RUN LOCALLY - cds watch:
 ----------------------------------------------------------------------------------------
@@ -11,3 +12,14 @@ cds watch
 SAMPLE DATA
 ----------------------------------------------------------------------------------------
 cds add data
+
+
+PREPARE FOR PRODUCTION
+----------------------------------------------------------------------------------------
+cds add hana --for production
+cds env requires -4 production
+cds add xsuaa --for production
+cds add html5-repo
+npm install
+cds build --production
+
