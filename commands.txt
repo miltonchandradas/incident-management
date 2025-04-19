@@ -25,3 +25,14 @@ cds build --production
 
 cds add mta
 
+
+CLEANUP
+----------------------------------------------------------------------------------------
+cf d incident-management -r -f
+cf d incident-management-db-deployer -r -f
+cf d incident-management-srv -r -f
+
+cf ds incident-management-auth -f
+cf ds incident-management-db -f
+cf ds incident-management-html5-repo-host -f
+cf ds incident-management-html5-runtime -f

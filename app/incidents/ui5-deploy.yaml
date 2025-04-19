@@ -15,6 +15,6 @@ builder:
     - name: ui5-task-zipper
       afterTask: generateVersionInfo
       configuration:
-        archiveName: incidents
+        archiveName: nsincidents
         additionalFiles:
           - xs-app.json
