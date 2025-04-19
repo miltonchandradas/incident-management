@@ -23,3 +23,5 @@ cds add html5-repo
 npm install
 cds build --production
 
+cds add mta
+
