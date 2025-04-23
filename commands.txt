@@ -25,6 +25,9 @@ cds build --production
 
 cds add mta
 
+mbt build
+cf deploy mta_archives/incident-management.1.0.0.mtar
+
 
 CLEANUP
 ----------------------------------------------------------------------------------------
