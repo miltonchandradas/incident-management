@@ -1,0 +1,25 @@
+{
+    "requires": {
+        "auth": {
+            "users": {
+                "admin": {
+                    "password": "password",
+                    "user_name": "admin",
+                    "email": "admin@acme.com",
+                    "roles": [
+                        "admin",
+                        "support"
+                    ]
+                },
+                "support": {
+                    "password": "password",
+                    "user_name": "support",
+                    "email": "support@acme.com",
+                    "roles": [
+                        "support"
+                    ]
+                }
+            }
+        }
+    }
+}
